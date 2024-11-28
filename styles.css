@@ -8,7 +8,8 @@ body {
     padding: 0;
     text-align: center;
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -27,7 +28,7 @@ header {
     max-width: 100%;
     height: auto;
     margin: 0 auto 20px;
-    border: 2px solid rgb(3, 13, 22);
+    border: 1px solid rgb(3, 13, 22);
     border-radius: 8px;
 }
 
@@ -36,6 +37,16 @@ header, section {
     padding: 20px;
     text-align: center;
     border: none;
+
+    /* Inicialmente oculto y desplazado hacia abajo */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+header.visible, section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h1 {
@@ -94,7 +105,7 @@ form button {
     cursor: pointer;
 }
 
-form button:hover{
+form button:hover {
     background-color: #006eff;
 }
 
