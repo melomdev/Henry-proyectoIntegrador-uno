@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Geist+Mono:wght@100..900&family=Jersey+10&family=Numans&family=Parkinsans:wght@300..800&display=swap');
+
+body {
+    background-color: rgb(41, 41, 43);
+    color: whitesmoke;
+    font-family: "Parkinsans", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header, section {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(3, 13, 22);
+    border-radius: 8px;
+}
+
+h1 {
+    color: rgb(141, 240, 163);
+}
+
+h2 {
+    color: rgb(141, 240, 163);
+}
+
+#cards-container, #activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid rgb(0, 255, 85);
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgb(12, 12, 14);
+}
+
+form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid rgb(7, 7, 8);
+    border-radius: 5px;
+    background-color: rgb(75, 74, 74);
+    color: bisque;
+}
+
+form button {
+    background-color: rgb(10, 83, 179);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #006eff;
+}
