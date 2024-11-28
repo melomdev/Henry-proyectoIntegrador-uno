@@ -14,12 +14,28 @@ body {
     padding: 20px;
 }
 
+header {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid greenyellow;
+    border-radius: 8px;
+}
+
+.header-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    border: 2px solid rgb(3, 13, 22);
+    border-radius: 8px;
+}
+
 header, section {
     margin: 20px 0;
     padding: 20px;
     text-align: center;
-    border: 1px solid rgb(3, 13, 22);
-    border-radius: 8px;
+    border: none;
 }
 
 h1 {
